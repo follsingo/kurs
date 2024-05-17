@@ -1,0 +1,2760 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+a:hover, a:visited, a:active, a {
+    color: #f0f0f0;
+}
+
+@font-face {
+    font-family: "spectral";
+    src: url("Spectral");
+}
+/*header styles*/
+body {
+    background-color: #f0f0f0;
+}
+
+#mainHeader {
+    opacity: 1;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    margin-left: auto;
+    font-size: 20px;
+}
+
+header {
+    opacity: 1;
+    width: 95%;
+    height: 70px;
+    background-color: #118829;
+    display: flex;
+    margin-left: auto;
+    font-size: 20px;
+}
+
+#mainNav {
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    margin-left: 15%;
+    width: 45%;
+    word-wrap: break-word;
+}
+
+/* nav {
+    height: 70px;
+    background-color: #1F87F0;
+    display: flex;
+    margin-left: 15%;
+    width: 45%;
+    word-wrap: break-word;
+} */
+.headerDivLogo {
+    margin-left: 4%;
+}
+
+.mainHeaderDiv {
+    background-color: #0b3c32;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    background-color: transparent;
+}
+
+.headerDiv {
+    background-color: #0b3c32;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    background-color: #0b3c32;
+}
+
+.headerDivLine {
+    display: none;
+}
+
+.headerDiv:hover .headerDivLine {
+    display: block;
+    height: 3px;
+    margin-top: auto;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#siteName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin-left: 4%;
+    font-size: 30px;
+}
+
+#magnifier {
+    width: 25px;
+    height: 25px;
+}
+
+#magnifierDiv {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.headerDivHref {
+    text-decoration: none;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+}
+.headerDivHref:hover {
+    background-size: 100% 2px;
+}
+
+.headerContent {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    top: 70px;
+    left: 5%;
+    width: 95%;
+    height: 0px;
+    z-index: 1;
+}
+
+#arrow1, #arrow2, #arrow3, #arrow4, #arrow5 {
+    display: none;
+    top: 60px;
+    left: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #f0f0f0;
+    transform: rotate(45deg);
+    border-top-left-radius: 3px;
+}
+
+/*------HEADER INFO------*/
+#magazineInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 7%;
+    width: 30%;
+}
+#magazineInfo h2 {
+    text-align: left;
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+#magazineInfo p {
+    line-height: 1.25;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+#magazineInfo a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 25px;
+}
+#magazineInfo button {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #8CCA8D 0%, #264527 8%, #0b3c32 30%, #08770B 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #8CCA8D 0%, #264527 8%, #0b3c32 25%, #1f3d5d 62.5%, #08770B 100%);
+    width: 350px;
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+#magazineInfo a:hover, #magazineImageAndPhrase a:hover, #magazineHrefs a:hover {
+    color: #0b3c32;
+}
+
+#magazineHrefs {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 3%;
+}
+#magazineHrefs a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#magazineImageAndPhrase {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-top: 70px;
+    padding-left: 10%;
+}
+
+#magazineImage, #aboutUsImage, #insightsImage, #pressImage, #careersImage {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 16vw;
+    padding-bottom: 10px;
+}
+
+#magazineImage {
+    background-image: url("./Image/magazineImage.jpg");
+}
+
+#aboutUsImage {
+    background-image: url("./Image/aboutUsImage.jpg");
+}
+
+#insightsImage {
+    background-image: url("./Image/insights.jpg");
+    height: 14vw;
+}
+
+#pressImage {
+    background-image: url("./Image/pressImage.jpg");
+    height: 14vw;
+}
+
+#careersImage {
+    background-image: url("./Image/careersImage.jpg");
+}
+
+/*-------arrow------*/
+#headerArrow {
+    margin-left: 10%;
+    margin-top: -3px;
+    transform: rotate(-45deg);
+}
+#headerArrow img {
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}
+#headerArrow:hover {
+    animation: headArr 1s;
+    animation-fill-mode: forwards;
+    transition: 1s all;
+}
+
+@keyframes headArr {
+    40% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#main-content {
+    width: 95%;
+    margin-left: 5%;
+}
+
+#mainMainContent {
+    width: 95%;
+    margin-left: 5%;
+    background: url("./Image/freepik-export-20240505164557Yh4M.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#mainSidebar {
+    opacity: 1;
+    display: block;
+    margin-right: auto;
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    background-color: #118829;
+    font-size: 20px;
+}
+
+#main-theme-picture-div {
+    position: relative;
+    opacity: 1;
+    display: flex;
+    height: 800px;
+    width: 100%;
+    margin-right: 6%;
+    border-bottom-right-radius: 150px;
+}
+
+#first-picture-content {
+    width: 450px;
+    margin-top: 2%;
+    margin-left: 15%;
+    font-size: 30px;
+    color: #000000;
+}
+
+#sidebarList {
+    margin-top: 120px;
+    text-align: center;
+}
+#sidebarList ul li {
+    padding-bottom: 30px;
+    margin-left: 1%;
+    width: 95%;
+}
+#sidebarList a {
+    color: #f0f0f0;
+}
+
+.sidebarListParts:hover {
+    box-shadow: white;
+}
+
+#mainHref {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+}
+
+.mainHrefs {
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+#mainForm {
+    padding-bottom: 5px;
+}
+
+#contactField {
+    opacity: 1;
+    width: 100%;
+    height: 250px;
+    margin-top: 0px;
+    border-color: #f0f0f0; /* обводка */
+    border-radius: 10px; /* округление углов */
+    margin-bottom: 50px;
+}
+
+
+#contactFieldHead {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 24px;
+}
+
+#contactFieldContentPhrase {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#contactFieldContent {
+    width: 95%;
+    margin-left: 3%;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.contactFieldForm {
+    outline: none;
+    width: 19%;
+    margin-top: 10px;
+    margin-left: 2%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 2px;
+    border: 2px solid #f0f0f0;
+}
+.contactFieldForm:focus::placeholder {
+    font-size: 16px;
+    transition: 0.2s all ease;
+}
+
+.separater {
+    display: none;
+}
+
+.contactFieldButton {
+    outline: none;
+    margin-left: 3%;
+    width: 7%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid #000000;
+}
+
+#ourSpecialist {
+    opacity: 1;
+    display: flex;
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    /* background: linear-gradient(to right bottom, rgb(39, 97, 233), rgb(240, 194, 10)); */
+    background-color: white;
+    border-bottom-right-radius: 120px;
+}
+
+#ourSpecialistPictureDiv {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 5%;
+    height: 380px;
+    width: 45%;
+    background: url("./Image/couple-meeting-with-insurance-agent-Thinkstock_680x402.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 50px;
+    box-shadow: 10px 10px #000000;
+}
+
+#ourSpecialistText {
+    margin-left: auto;
+    margin-top: 8%;
+    margin-right: 10%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#contactWithUserAboutRegion {
+    outline: none;
+    margin-top: 50px;
+    border-bottom-color: #000000;
+    width: 200px;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.contactFieldButtonSpecialist {
+    outline: none;
+    margin-left: 3%;
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+input,
+input:focus::placeholder {
+    transition: all 0.2s;
+    font-size: 16px;
+    /* animation: animOfSize 1s ease; */
+}
+
+#footer {
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-top: 50px;
+    height: 120px;
+    width: 93%;
+    background-color: #9ce25d;
+    border-top-left-radius: 150px;
+}
+
+#socialMedia {
+    padding-left: 10%;
+    padding-top: 10px;
+    width: 10%;
+}
+
+.rating {
+    height: 50px;
+}
+
+.socialMediaIcons {
+    margin-right: 1%;
+}
+
+#footerPart {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+#rights {
+    padding-top: 5px;
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+/*-button-*/
+.middle {
+    position: relative;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    margin-top: -230px;
+    width: 200px;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 0 0;
+    border: 2px solid black;
+    padding: 14px 55px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.btn::before {
+    background: #9ce25d;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn4::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn4:hover::before {
+    height: 390%;
+}
+
+#btnBus {
+    margin-top: 250px;
+    margin-left: -40px;
+    padding: 14px 50px;
+    color: #9ce25d;
+}
+#btnBus:hover::before {
+    height: 450%;
+}
+#btnBus:hover {
+    color: grey;
+    transition: 1s all;
+}
+
+.contactFieldSeparater {
+    display: none;
+}
+
+/*rating*/
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.ratingItem {
+    font-size: 50px;
+    color: #dcdcdc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ratingItem:hover, .ratingItem:hover ~ .ratingItem {
+    color: #989898;
+}
+
+.rating[data-total-value="1"] .ratingItem:nth-child(n+5),
+.rating[data-total-value="2"] .ratingItem:nth-child(n+4),
+.rating[data-total-value="3"] .ratingItem:nth-child(n+3),
+.rating[data-total-value="4"] .ratingItem:nth-child(n+2),
+.rating[data-total-value="5"] .ratingItem:nth-child(n+1) {
+    color: grey;
+}
+
+/*---Property---*/
+#mainProperty {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: grid;
+    width: 90%;
+    height: 1200px;
+    grid-template-areas: "a a b b c c" "a a b b c c" "d d d e e e";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    margin-bottom: 6%;
+}
+#mainProperty > div {
+    padding: 0.4em;
+    padding-top: 0.4em;
+    background: #B4B7B4;
+}
+#mainProperty h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.propertyAuto, .propertyHouse, .propertyPortativeDevices, .propertyFlat, .propertyPets {
+    position: relative;
+    transition: all 1s;
+}
+.propertyAuto:hover, .propertyHouse:hover, .propertyPortativeDevices:hover, .propertyFlat:hover, .propertyPets:hover {
+    transform: translate(0px, -10px);
+}
+
+.propertyAuto {
+    grid-area: c;
+}
+
+.propertyHouse {
+    grid-area: b;
+}
+
+.propertyFlat {
+    grid-area: a;
+}
+
+.propertyPortativeDevices {
+    grid-area: d;
+}
+
+.propertyPets {
+    grid-area: e;
+}
+
+#propertyFlatContent, #propertyHouseContent, #propertyAutoContent {
+    width: 100%;
+}
+#propertyFlatContent ul li, #propertyHouseContent ul li, #propertyAutoContent ul li {
+    margin-left: 10%;
+    font-size: 22px;
+    padding-top: 5%;
+}
+
+#propertyFlatContentInfo p, #propertyHouseContentInfo p, #propertyAutoContentInfo p {
+    margin-left: 5%;
+    font-size: 22px;
+    padding-top: 5%;
+}
+
+#propertyPortativeDevicesContent, #propertyPetsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonForPropertyDown {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border: 0;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #122115 0%, #9ce25d 50%, #118829 100%);
+    background-position: 90% 0;
+    background-size: 200% 200%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, 0.35);
+    transition: 0.5s;
+    font-family: "spectral";
+}
+.buttonForPropertyDown:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+#propertyPortativeDevicesContentInfo, #propertyPetsContentInfo {
+    margin-left: 5%;
+    width: 40%;
+}
+#propertyPortativeDevicesContentInfo p, #propertyPetsContentInfo p {
+    padding-left: 0%;
+    font-size: 18px;
+    padding-top: 0%;
+}
+#propertyPortativeDevicesContentInfo h2, #propertyPetsContentInfo h2 {
+    margin-bottom: 10px;
+}
+
+#propertyPortativeDevicesContent ul li, #propertyPetsContent ul li {
+    padding-left: 0%;
+    font-size: 18px;
+    padding-top: 0%;
+    padding-bottom: 12px;
+}
+
+#propertyFlatContentImage, #propertyHouseContentImage, #propertyAutoContentImage {
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 240px;
+}
+
+#propertyFlatContentImage {
+    background-image: url("./Image/flat.jpg");
+}
+
+h2 {
+    word-wrap: break-word;
+}
+
+#propertyHouseContentImage {
+    background-image: url("./Image/homeFullSure.jpg");
+}
+
+#propertyAutoContentImage {
+    background-image: url("./Image/machine.png");
+}
+
+#propertyPortativeDevicesContentImage, #propertyPetsContentImage {
+    width: 55%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin-top: 10px;
+    padding-right: 0;
+    margin-left: 3%;
+}
+
+#propertyPortativeDevicesContentImage {
+    background-image: url("./Image/telephone.jpg");
+}
+
+#propertyPetsContentImage {
+    background-image: url("./Image/pets31.jpg");
+}
+
+/*---health---*/
+#mainHealth {
+    height: 1650px;
+    width: 90%;
+    display: grid;
+    margin-top: 5%;
+    margin-left: 5%;
+    grid-template-areas: "covid19 covid19 pharmacy pharmacy kredit kredit" "covid19 covid19 pharmacy pharmacy kredit kredit" "covid19 covid19 pharmacy pharmacy kredit kredit" "covid19 covid19 pharmacy pharmacy kredit kredit" "covid19 covid19 manheains manheains kredit kredit" "unhappyaccident unhappyaccident manheains manheains volinsmedexp volinsmedexp" "unhappyaccident unhappyaccident manheains manheains volinsmedexp volinsmedexp" "unhappyaccident unhappyaccident manheains manheains volinsmedexp volinsmedexp" "unhappyaccident unhappyaccident manheains manheains volinsmedexp volinsmedexp";
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    margin-bottom: 6%;
+}
+#mainHealth > div {
+    padding: 0.4em;
+    padding-top: 0.4em;
+    background: #B4B7B4;
+}
+#mainHealth h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.covid19, .pharmacy, .kredit, .unhappyaccident, .manheains, .infovolunteerins, .volinsmedexp {
+    position: relative;
+    transition: 1s all;
+}
+.covid19:hover, .pharmacy:hover, .kredit:hover, .unhappyaccident:hover, .manheains:hover, .infovolunteerins:hover, .volinsmedexp:hover {
+    transform: translate(0px, -10px);
+}
+
+.covid19 {
+    grid-area: covid19;
+}
+
+.pharmacy {
+    grid-area: pharmacy;
+}
+
+.kredit {
+    grid-area: kredit;
+}
+
+.unhappyaccident {
+    grid-area: unhappyaccident;
+}
+
+.manheains {
+    grid-area: manheains;
+}
+
+.infovolunteerins {
+    grid-area: infovolunteerins;
+}
+
+.volinsmedexp {
+    grid-area: volinsmedexp;
+}
+
+/**/
+#covid19Content, #pharmacyContent, #kreditContent, #unhappyaccidentContent, #manheainsContent, #volinsmedexpContent {
+    width: 100%;
+}
+
+#sidebarList li:hover {
+    transform: scale(1.09);
+}
+
+.buttonForProperty {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border: 0;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #122115 0%, #9ce25d 50%, #118829 100%);
+    background-position: 90% 0;
+    background-size: 200% 200%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, 0.35);
+    transition: 0.5s;
+    font-family: "spectral";
+}
+.buttonForProperty:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+#covid19ContentInfo, #pharmacyContentInfo, #kreditContentInfo, #unhappyaccidentContentInfo, #manheainsContentInfo, #volinsmedexpContentInfo {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#covid19ContentInfo p, #pharmacyContentInfo p, #kreditContentInfo p, #unhappyaccidentContentInfo p, #manheainsContentInfo p, #volinsmedexpContentInfo p {
+    padding-left: 0%;
+    font-size: 18px;
+    padding-top: 0%;
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 22px;
+    padding-top: 5%;
+}
+
+#covid19Content ul li, #pharmacyContent ul li, #kreditContent ul li, #unhappyaccidentContent ul li, #manheainsContent ul li, #volinsmedexpContent ul li {
+    padding-bottom: 0px;
+    margin-left: 10%;
+    font-size: 22px;
+    padding-top: 5%;
+}
+
+#covid19ContentImage {
+    height: 15vw;
+    background-image: url("./Image/covid19.jpg");
+}
+
+#pharmacyContentImage {
+    height: 16vw;
+    background-image: url("./Image/pharmacy.jpg");
+}
+
+#kreditContentImage {
+    height: 16vw;
+    background-image: url("./Image/kredit.jpg");
+}
+
+#unhappyaccidentContentImage {
+    height: 12vw;
+    background-image: url("./Image/unhappyaccident.jpg");
+}
+
+#manheainsContentImage {
+    height: 12vw;
+    background-image: url("./Image/manheains.png");
+}
+
+#volinsmedexpContentImage {
+    height: 10vw;
+    background-image: url("./Image/volinsexpmed.jpg");
+}
+
+#covid19ContentImage, #pharmacyContentImage, #kreditContentImage, #unhappyaccidentContentImage, #manheainsContentImage, #volinsmedexpContentImage {
+    width: 95%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-bottom: 10%;
+}
+
+/*---vacation---*/
+#formForVacationDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: none;
+    flex-basis: content;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 800px;
+}
+
+#formForVacation {
+    position: relative;
+    border: black solid 1px;
+    width: 80%;
+    height: 600px;
+    border-radius: 40px;
+    background-color: #B4B7B4;
+}
+#formForVacation button {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    border-radius: 25px;
+    bottom: 7%;
+    left: 5%;
+    outline: none;
+    font-size: 20px;
+    transition: 1s all;
+}
+#formForVacation button:hover {
+    background-color: green;
+    color: white;
+    transition: 1s all;
+}
+
+#formForVacation legend, #formForVacationDescribe {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+#FIOpart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.FIO {
+    width: 20%;
+    height: 200px;
+    padding-right: 6.66%;
+}
+.FIO input {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 1s all;
+}
+
+#loginAndPassword, #dateFromTo, #insureSumAndPrize {
+    width: 15%;
+    height: 100px;
+    padding-right: 6.66%;
+}
+#loginAndPassword input, #dateFromTo input, #insureSumAndPrize input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+#territoryOfAgreement {
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+}
+
+#territoryOfAgreementPart {
+    width: 50%;
+}
+
+#loginAndPassword input, #insureSumAndPrize input {
+    margin-bottom: 10px;
+}
+
+#territoryOfAgreementPart div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    font-size: 18px;
+}
+#territoryOfAgreementPart div input {
+    width: 18%;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.FIO input:hover::placeholder, #loginAndPassword input:hover::placeholder, #dateFromTo input:hover::placeholder, #insureSumAndPrize input:hover::placeholder {
+    color: black;
+    opacity: 1;
+    transition: 1s all;
+}
+.FIO input:focus::placeholder, #loginAndPassword input:focus::placeholder, #dateFromTo input:focus::placeholder, #insureSumAndPrize input:focus::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+#formForVacationAnotherInformation {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 30px;
+    height: 200px;
+    width: 90%;
+}
+
+/*---Charity---*/
+#mainCharity {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: grid;
+    width: 90%;
+    height: 1000px;
+    grid-template-areas: "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "wap wap wap wap wap" "wap wap wap wap wap" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren";
+    grid-template-rows: 1.1fr 1.1fr 1.3fr 1.2fr 1.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    margin-bottom: 6%;
+}
+#mainCharity > div {
+    padding: 0.4em;
+    padding-top: 0.4em;
+    background: #B4B7B4;
+}
+#mainCharity h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.veterans, .redCross, .wap, .shelterBox, .helpingSickChildren {
+    transition: 1s all;
+    position: relative;
+}
+.veterans:hover, .redCross:hover, .wap:hover, .shelterBox:hover, .helpingSickChildren:hover {
+    transform: translate(0px, -10px);
+}
+
+.veterans {
+    grid-area: veterans;
+}
+
+.redCross {
+    grid-area: redCross;
+}
+
+.wap {
+    grid-area: wap;
+}
+
+.shelterBox {
+    grid-area: shelterBox;
+}
+
+.helpingSickChildren {
+    grid-area: helpingSickChildren;
+}
+
+#veteransContent, #shelterBoxContent, #redCrossContent, #wapContent, #helpingSickChildrenContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#shelterBoxContent {
+    margin-top: 10px;
+}
+
+#veteransContentInfo p, #shelterBoxContentInfo p, #redCrossContentInfo p, #wapContentInfo p, #helpingSickChildrenContentInfo p {
+    padding-left: 0%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 22px;
+    padding-top: 15%;
+}
+
+#wapContentInfo p {
+    padding-top: 5%;
+}
+
+#shelterBoxContentInfo p {
+    padding-top: 10%;
+}
+
+#helpingSickChildrenContentInfo p {
+    padding-top: 7%;
+}
+
+#redCrossContentInfo p {
+    padding-top: 20%;
+}
+
+#veteransContentInfo, #shelterBoxContentInfo, #redCrossContentInfo, #helpingSickChildrenContentInfo {
+    width: 32%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#shelterBoxContentInfo {
+    width: 36%;
+}
+
+#wapContentInfo {
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 18%;
+}
+
+#wapContentFlex {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+
+#veteransContentImage, #shelterBoxContentImage, #redCrossContentImage, #wapContentImage, #wapContentImageTwo, #helpingSickChildrenContentImage {
+    width: 58%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 3%;
+}
+
+#wapContentImageTwo {
+    width: 57%;
+    background-image: url("./Image/wapPetsTwo.jpg");
+    height: 13vw;
+}
+
+#wapContentImage {
+    background-image: url("./Image/wapPets.jpg");
+    width: 43%;
+    margin-left: 2%;
+}
+
+#shelterBoxContentImage {
+    margin-top: 20px;
+}
+
+#redCrossContentImage {
+    margin-top: 35px;
+}
+
+#veteransContentImage {
+    background-image: url("./Image/veterans.jpg");
+    height: 19vw;
+}
+
+#shelterBoxContentImage {
+    background-image: url("./Image/naturalDisasters.jpg");
+    height: 16vw;
+}
+
+#redCrossContentImage {
+    background-image: url("./Image/redCross.jpg");
+    height: 15vw;
+}
+
+#helpingSickChildrenContentImage {
+    margin-left: 2%;
+    margin-top: 5px;
+    background-image: url("./Image/helpingSickChildren.jpg");
+    height: 18vw;
+}
+
+/*---------business--------*/
+#mainBusiness {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 4800px;
+}
+#mainBusiness h1 {
+    text-align: left;
+    font-size: 54px;
+}
+#mainBusiness h2 {
+    text-align: left;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+#mainBusiness p {
+    padding-bottom: 10px;
+}
+#mainBusiness h3 {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 30px;
+    color: whitesmoke;
+}
+#mainBusiness table {
+    margin-top: 50px;
+    border: 1px solid gray;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+#mainBusiness tr {
+    border: 1px solid gray;
+}
+#mainBusiness td:first-child {
+    font-weight: 900;
+    vertical-align: top;
+}
+#mainBusiness td {
+    padding: 10px;
+}
+
+#businessNavDiv {
+    margin-top: 30px;
+    margin-left: 2.5%;
+    width: 30%;
+    height: 0px;
+    z-index: 0;
+}
+
+#trth {
+    background-color: #118829;
+    color: whitesmoke;
+    border-collapse: unset;
+    border-bottom: 3px solid #118829;
+    height: 50px;
+}
+
+#businessNav {
+    position: fixed;
+    background-color: #1BA137;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(45deg, #062862, #244d9e);
+    border-radius: 20px;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 9;
+}
+
+#businessContent {
+    width: 65%;
+    height: 4600px;
+}
+#businessContent article {
+    height: 1800px;
+}
+
+#firstPart, #secondPart, #thirdPart, #fourthPart {
+    font-size: 30px;
+}
+
+#fifthPart {
+    display: flex;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 90vw;
+    background-image: url("./Image/business.png");
+}
+
+#sixthPart {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: darkgreen;
+}
+#sixthPart p {
+    margin-top: 2%;
+    margin-left: 5%;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+#firstPartHr {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top-color: #118829;
+    border-top-width: 3px;
+}
+
+#secondPartHr {
+    width: 10%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border-top-color: #000000;
+    background-color: #000000;
+    border-bottom-color: #000000;
+    size: 2px;
+    border-top-width: 1px;
+}
+
+/*-----navigMenu------*/
+.nav1, .nav2, .nav3, .nav4 {
+    border-top: #156025;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    font-size: 24px;
+    font-family: Tahoma;
+    transition: 0.5s;
+}
+.nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover {
+    font-size: 28px;
+    background-color: darkolivegreen;
+}
+
+.nav1 {
+    border-top: 0px;
+}
+
+.nav1 a, .nav2 a, .nav3 a, .nav4 a {
+    text-decoration: none;
+    color: #118829;
+}
+
+/*-------GAMBURGER MENU--------*/
+.hamburger-menu {
+    display: none;
+    z-index: 12;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+    content: "";
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: "";
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+/*---Adaptive---*/
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+    #main-theme-picture-div {
+        height: 45vw;
+    }
+
+    #contactField {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+    #businessContent {
+        margin-left: 5%;
+        width: 60%;
+        height: 5450px;
+    }
+
+    #businessNav {
+        top: 130px;
+        bottom: 100px;
+    }
+
+    #mainBusiness {
+        height: 5650px;
+    }
+
+    #mainNav {
+        margin-left: 12%;
+        width: 50%;
+    }
+
+    .headerDivLogo {
+        margin-left: 4%;
+    }
+
+    #magnifierDiv {
+        margin-left: 10%;
+    }
+
+    .sidebarList {
+        display: none;
+    }
+
+    #first-picture-content {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    #first-picture-content h1 {
+        line-height: 5vw;
+        margin-block-start: 2vw;
+        margin-bottom: 0.3vw;
+    }
+
+    #main-theme-picture-div {
+        background-size: 100%;
+        border-bottom-right-radius: 150px;
+        height: 45vw;
+    }
+
+    #main-content {
+        width: 93%;
+        margin-left: 7%;
+    }
+
+    header {
+        width: 93%;
+        height: 70px;
+        background-color: #1BA137;
+        display: flex;
+        margin-left: auto;
+        font-size: 20px;
+    }
+
+    #mainSidebar {
+        display: block;
+        margin-right: auto;
+        width: 7%;
+        height: 100%;
+        position: fixed;
+        background-color: #118829;
+        font-size: 20px;
+    }
+
+    #loginAndPassword, #dateFromTo, #insureSumAndPrize {
+        width: 19%;
+        padding-right: 4%;
+    }
+
+    .FIO {
+        padding-right: 3%;
+        width: 22%;
+    }
+
+    #propertyFlatContentImage, #propertyHouseContentImage, #propertyAutoContentImage {
+        height: 17vw;
+    }
+
+    #propertyPortativeDevicesContentInfo ul li, #propertyPetsContentInfo ul li {
+        padding-bottom: 8px;
+    }
+
+    #propertyPortativeDevicesContentInfo {
+        width: 45%;
+    }
+
+    #propertyPortativeDevicesContentImage {
+        width: 45%;
+    }
+
+    #sidebarList {
+        margin-top: 12vh;
+    }
+    #sidebarList li {
+        margin-top: 2vh;
+    }
+
+    .btn {
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 14px;
+        font-family: "montserrat";
+        text-decoration: none;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border: 2px solid #1BA137;
+        padding: 14px 55px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s all ease;
+    }
+    .btn::before {
+        background: #1BA137;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+    }
+
+    .btn4::before {
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .btn4:hover::before {
+        height: 390%;
+    }
+
+    #btnBus {
+        width: 65%;
+        margin-left: 10%;
+    }
+
+    #contactFieldHead {
+        padding-top: 30px;
+    }
+
+    #ourSpecialist {
+        height: 400px;
+    }
+
+    .contactFieldButtonSpecialist {
+        margin-top: 10px;
+        margin-left: 5%;
+    }
+
+    .headerContent {
+        margin-left: 2%;
+        width: 93%;
+    }
+
+    #contactWithUserAboutRegion {
+        margin-top: 0px;
+    }
+
+    #ourSpecialistPictureDiv {
+        margin-top: 5%;
+        width: 40%;
+        height: 23vw;
+    }
+
+    #ourSpecialistText {
+        margin-top: 5%;
+        width: 40%;
+        line-height: 1.3;
+        margin-right: 6%;
+    }
+
+    #ourSpecialistPhrase {
+        margin-bottom: 10px;
+    }
+
+    .contactFieldSeparater {
+        display: inline;
+    }
+
+    #socialMedia {
+        padding-left: 10%;
+        padding-top: 10px;
+        width: 15%;
+    }
+
+    #siteName {
+        margin-left: 6%;
+    }
+
+    #mainProperty #h2down {
+        font-size: 22px;
+    }
+
+    .buttonForPropertyDown {
+        left: 0%;
+        width: 90%;
+    }
+
+    .buttonForProperty {
+        margin-left: 0;
+        left: 7.5%;
+        width: 85%;
+    }
+
+    #mainHealth {
+        height: 1900px;
+    }
+
+    #territoryOfAgreementPart input[name="North America"], #territoryOfAgreementPart input[name="South America"] {
+        width: 26%;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    #mainCharity {
+        margin-top: 5%;
+        margin-left: 5%;
+        display: grid;
+        width: 90%;
+        height: 1300px;
+        grid-template-areas: "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "wap wap wap wap wap" "wap wap wap wap wap" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren";
+        grid-template-rows: 1.2fr 1.2fr 1.5fr 1.3fr 1.3fr 1.2fr 1.2fr 1.2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2vw;
+        margin-bottom: 6%;
+    }
+
+    #veteransContent, #redCrossContent, #helpingSickChildrenContent, #shelterBoxContent {
+        flex-direction: column;
+    }
+
+    #veteransContentImage, #redCrossContentImage, #helpingSickChildrenContentImage, #shelterBoxContentImage {
+        width: 94%;
+        height: 25vw;
+    }
+
+    #shelterBoxContentImage {
+        margin-top: 0;
+    }
+
+    #veteransContentInfo, #redCrossContentInfo, #shelterBoxContentInfo, #helpingSickChildrenContentInfo {
+        width: 94%;
+    }
+
+    #veteransContentInfo p, #shelterBoxContentInfo p, #redCrossContentInfo p, #wapContentInfo p, #helpingSickChildrenContentInfo p {
+        padding-top: 5%;
+    }
+
+    #wapContent {
+        flex-direction: column;
+    }
+
+    #wapContentFlex {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+    }
+
+    #wapContentImage {
+        width: 45%;
+        height: 17vw;
+    }
+
+    #wapContentImageTwo {
+        width: 58%;
+        height: 17vw;
+    }
+
+    #wapContentInfo {
+        margin-top: 0;
+        height: 70px;
+        width: 90%;
+    }
+    #wapContentInfo p {
+        padding-top: 3%;
+    }
+
+    #redCrossContent {
+        margin-top: -20px;
+    }
+}
+@media (min-width: 610px) and (max-width: 900px) {
+    #businessNav {
+        width: 38%;
+    }
+
+    .headerDivHref {
+        font-size: calc(8px + 1.2vw);
+    }
+
+    #contactField {
+        margin-bottom: 20px;
+    }
+
+    #mainBr {
+        display: none;
+    }
+
+    .headerDivLogo {
+        margin-left: 2%;
+    }
+    .headerDivLogo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #magnifierDiv {
+        margin-left: 5%;
+    }
+
+    #contactFieldContent {
+        margin-top: 10px;
+        margin-left: 1%;
+    }
+
+    .contactFieldForm {
+        width: calc(17% + 0.1vw);
+        height: 40px;
+    }
+
+    .contactFieldButton {
+        width: 11%;
+    }
+
+    .sidebarList {
+        display: none;
+    }
+
+    #first-picture-content {
+        margin-top: 0;
+        margin-left: 10%;
+        font-size: 24px;
+        height: 400px;
+        margin-bottom: 0;
+    }
+    #first-picture-content h1 {
+        margin-top: 20px;
+        font-size: 32px;
+        margin-bottom: 1vw;
+    }
+    #first-picture-content p {
+        margin-top: 0vw;
+        font-size: 22px;
+    }
+
+    #mainNav {
+        width: 55%;
+        margin-left: 10%;
+    }
+
+    #main-theme-picture-div {
+        background-size: 100%;
+        border-bottom-right-radius: 150px;
+        height: 40vw;
+    }
+
+    #main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #mainMainContent {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+        background-color: #118829;
+        display: flex;
+        margin-left: auto;
+        font-size: 20px;
+    }
+
+    #mainSidebar {
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        z-index: 2;
+        position: fixed;
+        margin-top: auto;
+        height: 70px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #sidebarList {
+        margin-top: 0px;
+        width: 100%;
+        height: 70px;
+    }
+    #sidebarList ul {
+        width: 95%;
+        margin-left: 5%;
+    }
+    #sidebarList ul li {
+        padding-left: 7%;
+        padding-top: 10px;
+        display: inline-block;
+        width: 15%;
+    }
+
+    .sidebarListParts {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn {
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 14px;
+        font-family: "montserrat";
+        text-decoration: none;
+        margin: 9vw 0;
+        border: 2px solid white;
+        padding: 14px 55px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s all ease;
+    }
+    .btn::before {
+        background: #9ce25d;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+    }
+
+    .btn4::before {
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .btn4:hover::before {
+        height: 390%;
+    }
+
+    #ourSpecialist {
+        margin-top: 20px;
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .contactFieldButtonSpecialist {
+        width: 25%;
+    }
+
+    #contactWithUserAboutRegion {
+        margin-top: 0px;
+        width: 160px;
+    }
+
+    #ourSpecialistPictureDiv {
+        margin-top: 5%;
+        width: 45%;
+        height: 25vw;
+        box-shadow: 5px 5px #000000;
+    }
+
+    .headerContent {
+        left: 0;
+        width: 100%;
+    }
+
+    #magazineInfo {
+        padding-top: 40px;
+        padding-left: 3%;
+    }
+    #magazineInfo button {
+        width: 200px;
+        height: 60px;
+    }
+
+    .headerContent {
+        justify-content: center;
+    }
+
+    #headerArrow img {
+        margin-top: 10px;
+        margin-right: 7px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #ourSpecialistText {
+        margin-top: 2%;
+        width: 38%;
+        line-height: 1.1;
+        margin-right: 8%;
+        font-size: calc(12px + 0.9vw);
+    }
+
+    #propertyFlatContentImage, #propertyHouseContentImage, #propertyAutoContentImage {
+        height: 120px;
+    }
+
+    .buttonForProperty {
+        width: 90%;
+        left: 0px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .buttonForPropertyDown {
+        width: 90%;
+        left: 0px;
+    }
+
+    #propertyPortativeDevicesContentImage, #propertyPetsContentImage {
+        width: 45%;
+        height: 160px;
+        margin-right: 3%;
+    }
+
+    #propertyPortativeDevicesContentInfo, #propertyPetsContentInfo {
+        width: 45%;
+    }
+
+    #mainHealth {
+        height: 2200px;
+    }
+
+    #territoryOfAgreementPart input[name="North America"], #territoryOfAgreementPart input[name="South America"] {
+        width: 26%;
+        margin-top: 5px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    #formForVacationDiv {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: 700px;
+        border-radius: 40px;
+        background-color: #B4B7B4;
+        margin-bottom: 50px;
+    }
+
+    #formForVacation {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mainBusiness {
+        margin-left: 0;
+        width: 100%;
+        height: 6500px;
+    }
+
+    #businessNavDiv {
+        width: 47%;
+    }
+
+    #btnBus {
+        margin-left: 0;
+    }
+
+    .btnBus {
+        margin-left: 40px;
+        width: 240px;
+    }
+
+    #contactField {
+        opacity: 1;
+        width: 100%;
+        margin-top: 20px;
+        border-color: #f0f0f0;
+        margin-bottom: 20px;
+        height: 220px;
+    }
+
+    .contactFieldSeparater {
+        display: inline;
+    }
+
+    #socialMedia {
+        padding-left: 10%;
+        padding-top: 10px;
+        width: 20%;
+    }
+
+    #siteName {
+        margin-left: 6%;
+        font-size: calc(12px + 2vw);
+    }
+
+    #footer {
+        margin-bottom: 69px;
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #mainCharity {
+        margin-top: 5%;
+        margin-left: 5%;
+        display: grid;
+        width: 90%;
+        height: 1200px;
+        grid-template-areas: "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "wap wap wap wap wap" "wap wap wap wap wap" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren";
+        grid-template-rows: 1.2fr 1.2fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2vw;
+        margin-bottom: 6%;
+    }
+
+    #veteransContent, #redCrossContent, #helpingSickChildrenContent, #shelterBoxContent {
+        flex-direction: column;
+    }
+
+    #veteransContentImage, #redCrossContentImage, #helpingSickChildrenContentImage, #shelterBoxContentImage {
+        width: 94%;
+        height: 25vw;
+    }
+
+    #shelterBoxContentImage {
+        margin-top: 0;
+    }
+
+    #veteransContentInfo, #redCrossContentInfo, #shelterBoxContentInfo, #helpingSickChildrenContentInfo {
+        width: 94%;
+    }
+
+    #veteransContentInfo p, #shelterBoxContentInfo p, #redCrossContentInfo p, #wapContentInfo p, #helpingSickChildrenContentInfo p {
+        padding-top: 5%;
+    }
+
+    #wapContent {
+        flex-direction: column;
+    }
+
+    #wapContentFlex {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+    }
+
+    #wapContentImage {
+        width: 45%;
+        height: 17vw;
+    }
+
+    #wapContentImageTwo {
+        width: 58%;
+        height: 17vw;
+    }
+
+    #wapContentInfo {
+        margin-top: 0;
+        height: 70px;
+        width: 90%;
+    }
+
+    #wapContentInfo p {
+        padding-top: 3%;
+    }
+
+    #redCrossContent {
+        margin-top: -20px;
+    }
+}
+@media (min-width: 200px) and (max-width: 610px) {
+    #mainBr {
+        display: none;
+    }
+
+    .headerDivLogo {
+        margin-left: 2%;
+    }
+    .headerDivLogo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #magnifierDiv {
+        margin-right: 10%;
+    }
+
+    #contactFieldContent {
+        margin-top: 10px;
+        margin-left: 1%;
+    }
+
+    .contactFieldForm {
+        width: 44%;
+        height: 40px;
+    }
+
+    .contactFieldButton {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .sidebarList {
+        display: none;
+    }
+
+    #first-picture-content {
+        margin-top: 0;
+        margin-left: 5%;
+        font-size: 24px;
+        height: 350px;
+        margin-bottom: 0;
+    }
+    #first-picture-content h1 {
+        margin-top: 20px;
+        font-size: 32px;
+    }
+    #first-picture-content p {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    #mainNav {
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainNav .headerDivHref {
+        display: none;
+    }
+
+    .headerContent {
+        padding-top: 20px;
+    }
+
+    #magazineHrefs {
+        padding-top: 40px;
+    }
+
+    #magazineImageAndPhrase {
+        padding-top: 40px;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    #magnifierDiv {
+        margin-right: 13%;
+    }
+
+    #magazineImage, #aboutUsImage, #insightsImage, #pressImage, #careersImage {
+        height: 200px;
+    }
+
+    #magazineInfo {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .headerContent {
+        flex-direction: column;
+    }
+
+    #main-theme-picture-div {
+        background-size: 100%;
+        border-bottom-right-radius: 150px;
+        height: 310px;
+    }
+
+    #main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #mainMainContent {
+        width: 100%;
+        margin-left: 0;
+        background: #118829;
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+        background-color: #118829;
+        display: flex;
+        margin-left: auto;
+        font-size: 20px;
+    }
+
+    #mainSidebar {
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        z-index: 2;
+        position: fixed;
+        margin-top: auto;
+        height: 70px;
+        width: 100%;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #contactWithUserAboutRegion {
+        display: none;
+    }
+
+    #sidebarList {
+        margin-top: 0px;
+        width: 100%;
+        height: 70px;
+    }
+    #sidebarList ul {
+        width: 100%;
+        margin-left: 0%;
+    }
+    #sidebarList ul li {
+        padding-left: 7%;
+        padding-top: 10px;
+        display: inline-block;
+        width: 15%;
+    }
+
+    .sidebarListParts {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn {
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 14px;
+        font-family: "montserrat";
+        text-decoration: none;
+        margin-top: 100px;
+        margin-left: 20px;
+        width: 50%;
+        border: 2px solid #000000;
+        padding: 14px 55px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s all ease;
+    }
+    .btn::before {
+        background: #9ce25d;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+    }
+
+    .btn4::before {
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .btn4:hover::before {
+        height: 390%;
+    }
+
+    #ourSpecialist {
+        padding-top: 20px;
+        flex-direction: column;
+        margin-top: 0px;
+        height: calc(400px + 50vw);
+    }
+
+    .contactFieldButtonSpecialist {
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    #contactWithUserAboutRegion {
+        margin-top: 0px;
+        width: 160px;
+    }
+
+    #ourSpecialistPictureDiv {
+        margin-top: 5%;
+        width: 90%;
+        height: 50vw;
+        box-shadow: 5px 5px #000000;
+    }
+
+    .headerContent {
+        left: 0;
+        width: 100%;
+    }
+
+    #magazineInfo {
+        padding-top: 0px;
+        padding-left: 3%;
+    }
+    #magazineInfo button {
+        width: 300px;
+        height: 60px;
+    }
+
+    #mainBusiness {
+        margin-top: 100px;
+    }
+
+    #headerArrow img {
+        margin-top: 10px;
+        margin-right: 7px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #ourSpecialistText {
+        padding-top: 55vw;
+        width: 90%;
+        line-height: 1.2;
+        margin-right: 5%;
+    }
+
+    #propertyFlatContentImage, #propertyHouseContentImage, #propertyAutoContentImage {
+        height: 120px;
+    }
+
+    .buttonForProperty {
+        width: 90%;
+        left: 0;
+        margin-left: 5%;
+    }
+
+    .buttonForPropertyDown {
+        width: 90%;
+        left: 0px;
+        margin-left: 5%;
+    }
+
+    #propertyPortativeDevicesContent, #propertyPetsContent {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #propertyPortativeDevicesContentImage, #propertyPetsContentImage {
+        width: 95%;
+        height: 400px;
+        margin-right: 3%;
+    }
+
+    #propertyPortativeDevicesContentInfo, #propertyPetsContentInfo {
+        width: 90%;
+    }
+
+    #mainHealth {
+        height: 2200px;
+    }
+
+    #territoryOfAgreementPart input[name="North America"], #territoryOfAgreementPart input[name="South America"] {
+        width: 26%;
+        margin-top: 5px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    #formForVacationDiv {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: 700px;
+        border-radius: 40px;
+        background-color: #B4B7B4;
+        margin-bottom: 50px;
+    }
+
+    #formForVacation {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mainBusiness {
+        margin-left: 0;
+        width: 100%;
+        height: 6500px;
+    }
+
+    #businessNavDiv {
+        width: 47%;
+    }
+
+    #btnBus {
+        margin-left: 40px;
+        width: 150px;
+        margin-top: 150px;
+    }
+
+    .btnBus {
+        margin-left: 40px;
+        width: 240px;
+    }
+
+    #contactField {
+        opacity: 1;
+        width: 100%;
+        margin-top: 20px;
+        background-color: #f0f0f0;
+        margin-bottom: 0px;
+        height: 430px;
+    }
+
+    .contactFieldSeparater {
+        display: inline;
+    }
+
+    #socialMedia {
+        text-align: center;
+        width: 90%;
+        height: 50px;
+        display: inline-block;
+        padding-left: 6%;
+    }
+
+    #siteName {
+        margin-left: 10%;
+        font-size: 28px;
+    }
+
+    #footer {
+        height: 180px;
+        flex-direction: column;
+        margin-bottom: 69px;
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        border-top-left-radius: 0;
+    }
+
+    #footerPart {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #rights {
+        padding-left: 0;
+    }
+
+    .socialMediaIcons {
+        margin-right: 6%;
+    }
+
+    #mainCharity {
+        margin-top: 5%;
+        margin-left: 5%;
+        display: grid;
+        width: 90%;
+        height: 1200px;
+        grid-template-areas: "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "veterans veterans veterans redCross redCross" "wap wap wap wap wap" "wap wap wap wap wap" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren" "shelterBox shelterBox helpingSickChildren helpingSickChildren helpingSickChildren";
+        grid-template-rows: 1.2fr 1.2fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2vw;
+        margin-bottom: 6%;
+    }
+
+    #veteransContent, #redCrossContent, #helpingSickChildrenContent, #shelterBoxContent {
+        flex-direction: column;
+    }
+
+    #veteransContentImage, #redCrossContentImage, #helpingSickChildrenContentImage, #shelterBoxContentImage {
+        width: 94%;
+        height: 25vw;
+    }
+
+    #shelterBoxContentImage {
+        margin-top: 0;
+    }
+
+    #veteransContentInfo, #redCrossContentInfo, #shelterBoxContentInfo, #helpingSickChildrenContentInfo {
+        width: 94%;
+    }
+
+    #veteransContentInfo p, #shelterBoxContentInfo p, #redCrossContentInfo p, #wapContentInfo p, #helpingSickChildrenContentInfo p {
+        padding-top: 5%;
+    }
+
+    #wapContent {
+        flex-direction: column;
+    }
+
+    #wapContentFlex {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+    }
+
+    #wapContentImage {
+        width: 45%;
+        height: 17vw;
+    }
+
+    #wapContentImageTwo {
+        width: 58%;
+        height: 17vw;
+    }
+
+    #wapContentInfo {
+        margin-top: 0;
+        height: 70px;
+        width: 90%;
+    }
+
+    #wapContentInfo p {
+        padding-top: 3%;
+    }
+
+    #redCrossContent {
+        margin-top: -20px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    #mainProperty {
+        margin-top: 5%;
+        margin-left: 5%;
+        display: grid;
+        width: 90%;
+        height: 3800px;
+        grid-template-areas: "a" "b" "c" "d" "e";
+        grid-template-columns: 12fr;
+        grid-template-rows: 1.2fr 1.2fr 1.3fr 1.5fr 1.5fr;
+        grid-gap: 3vw;
+    }
+
+    #propertyPortativeDevicesContent ul li, #propertyPetsContent ul li {
+        font-size: 22px;
+        margin-left: 10%;
+        padding-top: 5%;
+    }
+
+    #propertyFlatContentImage, #propertyHouseContentImage, #propertyAutoContentImage, #veteransContentImage,
+    #shelterBoxContentImage, #redCrossContentImage, #helpingSickChildrenContentImage {
+        height: 55vw;
+    }
+
+    #covid19ContentImage, #pharmacyContentImage, #kreditContentImage, #manheainsContentImage, #unhappyaccidentContentImage, #volinsmedexpContentImage {
+        height: 50vw;
+    }
+
+    #wapContentImage, #wapContentImageTwo {
+        width: 100%;
+        height: 120px;
+    }
+
+    #propertyFlatContentInfo, #propertyHouseContentInfo, #propertyAutoContentInfo, #propertyPortativeDevicesContentInfo, #propertyPetsContentInfo {
+        margin-top: 20px;
+    }
+
+    #mainHealth {
+        height: 5500px;
+        grid-template-areas: "covid19" "pharmacy" "kredit" "manheains" "unhappyaccident" "volinsmedexp";
+        grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column: 12fr;
+        grid-gap: 2vw;
+    }
+
+    #formForVacationDiv {
+        height: 1700px;
+    }
+
+    #formForVacationAnotherInformation {
+        flex-direction: column;
+    }
+
+    #loginAndPassword, #dateFromTo, #insureSumAndPrize {
+        width: 100%;
+    }
+
+    #insureSumAndPrize {
+        margin-top: 30px;
+    }
+
+    #FIOpart {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .FIO {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+
+    #formForVacation button {
+        bottom: 1%;
+    }
+
+    #territoryOfAgreement {
+        width: 70%;
+    }
+
+    #territoryOfAgreement {
+        margin-top: 20px;
+        margin-left: 18%;
+    }
+
+    #territoryOfAgreementPart input[name="North America"], #territoryOfAgreementPart input[name="South America"] {
+        width: 18%;
+        height: 30px;
+        justify-content: space-evenly;
+    }
+
+    #mainCharity {
+        height: 2500px;
+        grid-template-areas: "veterans" "redCross" "wap" "shelterBox" "helpingSickChildren";
+        grid-template-rows: 0.7fr 0.8fr 0.8fr 0.8fr 1fr;
+        grid-template-columns: 12fr;
+        grid-gap: 2vw;
+    }
+
+    #wapContentFlex {
+        flex-direction: column;
+    }
+
+    #mainBusiness {
+        height: 7620px;
+    }
+
+    #mainBusiness table {
+        font-size: 10px;
+    }
+
+    #businessNav {
+        width: 95%;
+        top: 80px;
+        display: inline;
+        height: 100px;
+    }
+
+    #businessContent {
+        width: 100%;
+    }
+
+    #fifthPart {
+        height: 500px;
+    }
+
+    #businessNavDiv {
+        width: 90%;
+    }
+
+    .nav1, .nav2, .nav3, .nav4 {
+        border: 0;
+        font-size: 10px;
+        width: 24%;
+    }
+    .nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover {
+        font-size: 10px;
+        background-color: darkolivegreen;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 400px) {
+    #magnifierDiv {
+        margin-left: 30%;
+    }
+
+    #mainBusiness {
+        word-wrap: break-word;
+        height: 6590px;
+    }
+
+    .btn {
+        margin-left: 20px;
+    }
+
+    #ourSpecialistPictureDiv {
+        height: 180px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 450px) {
+    #magnifierDiv {
+        margin-left: 35%;
+    }
+
+    #mainBusiness {
+        word-wrap: break-word;
+        height: 5850px;
+    }
+
+    .btn {
+        margin-left: 10px;
+    }
+
+    #ourSpecialistPictureDiv {
+        height: 180px;
+    }
+}
+
+/*# sourceMappingURL=StyleSheet1.css.map */

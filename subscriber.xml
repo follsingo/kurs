@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subscribers>
+    <subscriber>
+        <name>Иван</name>
+        <surname>Иванов</surname>
+        <email>ivan@example.com</email>
+        <password>securepassword1</password>
+    </subscriber>
+    <subscriber>
+        <name>Мария</name>
+        <surname>Петрова</surname>
+        <email>maria@example.com</email>
+        <password>strongpassword2</password>
+    </subscriber>
+</subscribers>
